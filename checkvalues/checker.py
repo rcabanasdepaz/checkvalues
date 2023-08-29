@@ -25,8 +25,8 @@ class Checker(object):
             raise ValueError(t("wrong_sol"))
 
 
-        df["args"] = df["args"].replace(np.nan, None)
-        df["kwargs"] = df["kwargs"].replace(np.nan, None)
+        df["args"] = df["args"].replace(np.nan, "")
+        df["kwargs"] = df["kwargs"].replace(np.nan, "")
 
         self._solutions = df
 
@@ -72,7 +72,7 @@ class Checker(object):
             if encrypted:
                 actual = hashlib.md5(str(actual).encode()).hexdigest()
             if actual != expected:
-                errmsg = f"function {name} {t('wrong_func')} args={args}, kwargs={kwargs} "
+                errmsg = f"function {name} {t('wrong_func')} args={args}, kwargs={kwargs}"
         return errmsg
 
     @staticmethod
@@ -83,7 +83,6 @@ class Checker(object):
         return [cast[s.split(":")[0]](s.split(":")[1]) for s in spec.split(";")]
     @staticmethod
     def _kwargs_to_list(spec):
-
         if spec == "" or spec is None:
             return dict()
         cast = dict(int=int, float=float, str=str)

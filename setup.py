@@ -30,6 +30,16 @@ except IndexError:
 #    long_description = f.read()
 
 
+# function to read requirements, and include them as package dependencies
+def get_requirements(*files):
+    # read requirements.txt file and return them as a list of strings
+    reqs = []
+    for file in files:
+        with open(file) as f:
+            req = f.readlines()
+        reqs += [r.strip() for r in req]
+    return reqs  # clean lines from blank spaces and line breaks
+
 setuptools.setup(
     name="checkvalues", # Replace with your own username
     version=version,
@@ -52,7 +62,6 @@ setuptools.setup(
                  'Operating System :: Microsoft :: Windows',
                  'Programming Language :: Python :: 3.8'],
     python_requires='>=3.8',
-
+    install_requires=get_requirements('requirements.txt'),
     #extras_require=dict(tests=['pytest'])
-
 )

@@ -29,3 +29,6 @@ z = 5
 lista = ["1", 2, 3.0, 3]
 
 check_solution(filepath)
+
+import pandas as pd
+pd.__version__
