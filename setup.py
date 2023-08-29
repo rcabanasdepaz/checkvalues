@@ -14,7 +14,7 @@ here = os.path.dirname(os.path.abspath(__file__))
 print(here)
 
 # open __init__.py, where version is specified
-with open(os.path.join(here, 'bcause', '__init__.py')) as f:
+with open(os.path.join(here, 'checkvalues', '__init__.py')) as f:
     txt = f.read()
 
 
