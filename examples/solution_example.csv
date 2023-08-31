@@ -1,7 +1,7 @@
 label,type,name,args,kwargs,encrypted,expected,points
-Ejercicio 1.1,var,x,,,True,c81e728d9d4c2f636f067f89cc14862c,1
-Ejercicio 1.2,var,y,,,True,55c82b601deae028c1c5e87fd820923d,1
-Ejercicio 1.3,var,z,,,True,a87ff679a2f3e71d9181a67b7542122c,1
-Ejercicio 1.4,var,lista,,,True,3730122527a164abdec1a5acb762af67,1
-Ejercicio 1.5,func,func1,int:2;float:3,,True,6bc071ec71e51c704acd13cdc898fd93,0.5
-Ejercicio 1.5,func,func1,,b=int:2;a=int:3,True,6364d3f0f495b6ab9dcf8d3b5c6e0b01,0.5
+Exercise 1.1,var,x,,,True,c81e728d9d4c2f636f067f89cc14862c,1
+Exercise 1.2,var,y,,,True,55c82b601deae028c1c5e87fd820923d,1
+Exercise 1.3,var,z,,,True,a87ff679a2f3e71d9181a67b7542122c,1
+Exercise 1.4,var,lista,,,True,3730122527a164abdec1a5acb762af67,1
+Exercise 1.5,func,func1,int:2;float:3,,True,6bc071ec71e51c704acd13cdc898fd93,0.5
+Exercise 1.5,func,func1,,b=int:2;a=int:3,True,6364d3f0f495b6ab9dcf8d3b5c6e0b01,0.5

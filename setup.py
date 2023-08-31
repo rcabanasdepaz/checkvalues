@@ -5,8 +5,8 @@ import setuptools
 import os
 
 
-if sys.version_info < (3, 8):
-    sys.exit('Python < 3.8 is not supported')
+if sys.version_info < (3, 7):
+    sys.exit('Python < 3.7 is not supported')
 
 
 # get abs path from this folder name
