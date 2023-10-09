@@ -62,6 +62,8 @@ setuptools.setup(
                  'Operating System :: Microsoft :: Windows',
                  'Programming Language :: Python :: 3.8'],
     python_requires='>=3.8',
-    install_requires=get_requirements('requirements.txt'),
+    # install_requires=get_requirements('requirements.txt'),
+    install_requires=["pandas >1.1, <2.1",
+"numpy>1.22, <1.26"]
     #extras_require=dict(tests=['pytest'])
 )
